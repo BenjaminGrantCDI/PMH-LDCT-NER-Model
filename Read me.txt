@@ -1,0 +1,18 @@
+In the zip file, you will find multiple .pt files, these are the NER models trained for radiology NER. 
+For best performance, you could use "en_test102_nertagger.pt" which was trained by 400 labeled radiology reports. 
+
+
+Demo code:
+
+import stanza
+nlp = stanza.Pipeline(lang='en', processors={'ner': 'tokenize'}, ner_model_path='saved_models/en_test102_nertagger.pt')
+text = xxx.lower("The body of the report")
+text = text.replace(", and", "and")
+------other preprocessing depends on the task----------
+doc = nlp(text)
+
+
+
+and you could follow the stanza NER usage page:
+https://stanfordnlp.github.io/stanza/biomed_model_usage.html
+
