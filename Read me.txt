@@ -5,7 +5,7 @@ All trained models described in our manuscript can be made available upon reques
 Demo code:
 
 import stanza
-nlp = stanza.Pipeline(lang='en', processors={'ner': 'tokenize'}, ner_model_path='saved_models/en_test102_nertagger.pt')
+nlp = stanza.Pipeline(lang='en', processors={'ner': 'tokenize'}, ner_model_path='saved_models/Bi-LSTM_LDCT_NER.pt')
 text = xxx.lower("The body of the report")
 text = text.replace(", and", "and")
 ------other preprocessing depends on the task----------
