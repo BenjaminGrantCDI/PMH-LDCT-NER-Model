@@ -1,5 +1,5 @@
-In the zip file, you will find multiple .pt files, these are the NER models trained for radiology NER. 
-For best performance, you could use "en_test102_nertagger.pt" which was trained by 400 labeled radiology reports. 
+This is our best-performing NER model trained for radiology NER, which was trained by 400 labeled radiology reports. 
+All trained models described in our manuscript can be made available upon request.
 
 
 Demo code:
